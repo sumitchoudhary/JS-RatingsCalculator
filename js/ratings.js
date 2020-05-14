@@ -1,0 +1,5 @@
+function collect_ratings()
+{
+
+
+}
