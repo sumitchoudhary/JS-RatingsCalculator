@@ -17,4 +17,5 @@ function collect_ratings() {
 
 
     }
+    return ratings;
 }
