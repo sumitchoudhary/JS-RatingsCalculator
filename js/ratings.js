@@ -12,10 +12,12 @@ function collect_ratings() {
     });
 
     if (ratings.count !== 0) {
-
-        ratings.average = ratings.sum / ratings.count
-
-
-    }
+        ratings.average = ratings.sum / ratings.count}
     return ratings;
 }
+
+document.addEventListener('change', (even) => {
+    const ratings = collect_ratings();
+    document.querySelector('#average').value = ratings.average.toFixed(2)
+
+});
