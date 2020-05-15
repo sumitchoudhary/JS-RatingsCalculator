@@ -5,12 +5,13 @@ function collect_ratings()
     const elements = document.querySelectorAll('.rating')
 
 
-    elements.forEach(elements => {
-   rating = parseInt(elements.id.replace('star',''));
+    elements.forEach(element => {
+   rating = parseInt(element.id.replace('star',''));
+            ratings.count += parseInt(element.value);
+            ratings.sum += parseInt(element.value)*rating;
 
+            console.log(ratings.count );                                    }
 
-                                    }
-    
-                                    );
+                               );
 
 }
